@@ -1,9 +1,8 @@
 ﻿using MediatR;
 
-namespace FeatureLib.Features.DataValues.GetValueByKey
+namespace FeatureLib.Features.DataValues.GetValueByKey;
+
+public class GetValueByKey : IRequest<string>
 {
-    public class GetValueByKey : IRequest<string>
-    {
-        public string Key { get; set; } = string.Empty;
-    }
+    public string Key { get; set; } = string.Empty;
 }

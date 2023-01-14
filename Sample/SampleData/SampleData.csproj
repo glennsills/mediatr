@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="D:\src\mediatr\Sample\SampleData\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="D:\src\mediatr\Sample\SampleData\.editorconfig" />
+  </ItemGroup>
+
+</Project>
