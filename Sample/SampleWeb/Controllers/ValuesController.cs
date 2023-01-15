@@ -1,9 +1,8 @@
-﻿using FeatureLib.Features.DataValues.AddValue;
-using FeatureLib.Features.DataValues.Get;
-using FeatureLib.Features.DataValues.GetValueByKey;
+﻿using SampleValueFeatures.Features.DataValues.AddValue;
+using SampleValueFeatures.Features.DataValues.Get;
+using SampleValueFeatures.Features.DataValues.GetValueByKey;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using System.Runtime.CompilerServices;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 

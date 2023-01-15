@@ -7,15 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.2" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EditorConfigFiles Remove="D:\src\mediatr\Sample\SampleData\.editorconfig" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="D:\src\mediatr\Sample\SampleData\.editorconfig" />
   </ItemGroup>
 
 </Project>

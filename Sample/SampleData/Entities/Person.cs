@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace SampleData.Entities;
+namespace Sample.Data.Entities;
 
 public class Person
 {
@@ -29,4 +29,5 @@ public class Person
         LastName = lastName;
         Addresses = new List<Address>();
     }
+
 }

@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.33209.295
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleWeb", "SampleWeb\SampleWeb.csproj", "{24970402-63BA-43BA-A025-D1D19E98E93A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FeatureLib", "Features\FeatureLib.csproj", "{644FED90-E0B9-4B49-8733-392C06738398}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FeatureLib", "SampleValuesFeatures\SampleValuesFeatures.csproj", "{644FED90-E0B9-4B49-8733-392C06738398}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleData", "SampleData\SampleData.csproj", "{597CDF89-4797-4E24-B371-158EB07F2EBE}"
 EndProject

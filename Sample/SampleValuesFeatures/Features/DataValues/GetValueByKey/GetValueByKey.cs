@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace FeatureLib.Features.DataValues.GetValueByKey;
+namespace SampleValueFeatures.Features.DataValues.GetValueByKey;
 
 public class GetValueByKey : IRequest<string>
 {

@@ -11,11 +11,17 @@
     <PackageReference Include="MediatR.Extensions.FluentValidation.AspNetCore" Version="4.0.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.2" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Features\FeatureLib.csproj" />
+    <ProjectReference Include="..\SampleValuesFeatures\SampleValuesFeatures.csproj" />
+    <ProjectReference Include="..\SampleData\SampleData.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,7 +1,7 @@
-﻿using FeatureLib.Features.DataValues.DataAccess;
+﻿using SampleValueFeatures.Features.DataValues.DataAccess;
 using MediatR;
 
-namespace FeatureLib.Features.DataValues.Get;
+namespace SampleValueFeatures.Features.DataValues.Get;
 
 public class GetAllDataHandler : IRequestHandler<GetAllValues, List<KeyValuePair<string, string>>>
 {

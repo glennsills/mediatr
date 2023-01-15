@@ -1,7 +1,8 @@
-using FeatureLib.Features.DataValues.DataAccess;
+using SampleValueFeatures.Features.DataValues.DataAccess;
 using MediatR;
 using MediatR.Extensions.FluentValidation.AspNetCore;
-using System.Reflection;
+using Microsoft.EntityFrameworkCore;
+using Sample.Data;
 
 namespace SampleWeb;
 
@@ -12,6 +13,15 @@ public class Program
         var builder = WebApplication.CreateBuilder(args);
 
         // Add services to the container.
+        builder.Services.AddDbContext<SampleDataContext>(
+        dbContextOptionsBuilder =>
+        {
+
+            dbContextOptionsBuilder.UseSqlite("yourConnection",
+                options => { options.MigrationsAssembly("SampleData"); });
+
+        });
+
 
         builder.Services.AddControllers();
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -20,7 +30,7 @@ public class Program
 
         var mediatrAssembly = typeof(DataContainer).Assembly;
         builder.Services.AddMediatR(mediatrAssembly);
-        builder.Services.AddFluentValidation(new[] { mediatrAssembly });
+        //builder.Services.AddFluentValidation(new[] { mediatrAssembly });
 
 
         var app = builder.Build();

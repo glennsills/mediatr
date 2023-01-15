@@ -1,4 +1,4 @@
-﻿namespace FeatureLib.Features.DataValues.DataAccess;
+﻿namespace SampleValueFeatures.Features.DataValues.DataAccess;
 
 public class DataContainer
 {
@@ -23,9 +23,9 @@ public class DataContainer
         return Task.CompletedTask;
     }
 
-    internal static Task<bool> ContainsKey(string key)
+    internal static bool ContainsKey(string key)
     {
-        return Task.FromResult(_values.ContainsKey(key));
+        return _values.ContainsKey(key);
     }
 
     internal static Task<string> GetValueByKey(string key)
