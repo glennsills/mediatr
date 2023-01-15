@@ -9,9 +9,9 @@ using Sample.Data;
 
 namespace SampleData.Migrations
 {
-    [DbContext(typeof(SampleDataContext))]
-    [Migration("20230115163159_fourth")]
-    partial class fourth
+    [DbContext(typeof(SamplePeopleDataContext))]
+    [Migration("20230114221847_second")]
+    partial class second
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

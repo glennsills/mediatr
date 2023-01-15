@@ -9,7 +9,7 @@ using Sample.Data;
 
 namespace SampleData.Migrations
 {
-    [DbContext(typeof(SampleDataContext))]
+    [DbContext(typeof(SamplePeopleDataContext))]
     [Migration("20230114221608_initial")]
     partial class initial
     {

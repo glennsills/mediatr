@@ -13,12 +13,12 @@ public class Program
         var builder = WebApplication.CreateBuilder(args);
 
         // Add services to the container.
-        builder.Services.AddDbContext<SampleDataContext>(
+        builder.Services.AddDbContext<SamplePeopleDataContext>(
         dbContextOptionsBuilder =>
         {
 
             dbContextOptionsBuilder.UseSqlite("yourConnection",
-                options => { options.MigrationsAssembly("SampleData"); });
+                options => { options.MigrationsAssembly("SamplePeopleData"); });
 
         });
 

@@ -43,7 +43,11 @@ public class ValuesController : ControllerBase
     {
         var addValueRequest = new AddValue { Key = addValue.Key, Value = addValue.Value };
         var result = await _mediator.Send(addValueRequest);
-        return Ok(result);
+        if (result.Success == true)
+        {
+            return Ok(result);
+        }
+        return BadRequest(result);
     }
 
     // PUT api/<ValuesController>/5

@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleWeb", "SampleWeb\Samp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FeatureLib", "SampleValuesFeatures\SampleValuesFeatures.csproj", "{644FED90-E0B9-4B49-8733-392C06738398}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleData", "SampleData\SampleData.csproj", "{597CDF89-4797-4E24-B371-158EB07F2EBE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SamplePeopleData", "SamplePeopleData\SamplePeopleData.csproj", "{597CDF89-4797-4E24-B371-158EB07F2EBE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
