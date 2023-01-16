@@ -1,5 +1,5 @@
 ﻿using MediatR;
-using SampleValuesFeatures.SharedBehavior;
+using SampleSharedStuff;
 
 namespace SampleValueFeatures.Features.DataValues.AddValue;
 

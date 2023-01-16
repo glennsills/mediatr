@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\AddPerson\" />
+    <Folder Include="Features\DeletePerson\" />
+    <Folder Include="Features\AddAddressToPerson\" />
+    <Folder Include="Features\ListAddressesForPerson\" />
+    <Folder Include="Features\RemoveAddressFromPerson\" />
+    <Folder Include="Features\UpdatePerson\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="11.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SamplePeopleData\SamplePeopleData.csproj" />
+  </ItemGroup>
+
+</Project>

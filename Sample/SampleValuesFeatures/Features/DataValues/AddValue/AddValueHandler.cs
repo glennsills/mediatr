@@ -1,7 +1,7 @@
 ﻿using SampleValueFeatures.Features.DataValues.DataAccess;
 using MediatR;
 using FluentValidation.Results;
-using SampleValuesFeatures.SharedBehavior;
+using SampleSharedStuff;
 
 namespace SampleValueFeatures.Features.DataValues.AddValue;
 

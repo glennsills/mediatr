@@ -15,6 +15,6 @@ public class Address
         Line1 = line1;
         City = city;
         Country = country;
- 
+
     }
 }

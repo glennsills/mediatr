@@ -1,6 +1,6 @@
 ﻿using FluentValidation.Results;
 
-namespace SampleValuesFeatures.SharedBehavior;
+namespace SampleSharedStuff;
 public class RequestResultValue<T> : RequestResult
 {
     public T? Result { get; set; }
