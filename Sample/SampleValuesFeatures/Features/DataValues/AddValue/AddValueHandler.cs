@@ -9,14 +9,15 @@ public class AddValueHandler : IRequestHandler<AddValue, RequestResult>
 {
     public async Task<RequestResult> Handle(AddValue request, CancellationToken cancellationToken)
     {
-        var addDataValidator = new AddValueValidator();
-        ValidationResult validationResult = addDataValidator.Validate(request);
+        //var addDataValidator = new AddValueValidator();
+        //ValidationResult validationResult = addDataValidator.Validate(request);
 
-        if (validationResult.IsValid)
-        {
+        //if (validationResult.IsValid)
+        //{
             await DataContainer.Add(request.Key, request.Value);
-        }
+            return new RequestResult { Success = true };
+        //}
 
-        return RequestResult.FromValidationResult(validationResult);
+        //return RequestResult.FromValidationResult(validationResult);
     }
 }

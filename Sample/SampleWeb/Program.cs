@@ -22,7 +22,6 @@ public class Program
 
         });
 
-
         builder.Services.AddControllers();
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
@@ -30,7 +29,7 @@ public class Program
 
         var mediatrAssembly = typeof(DataContainer).Assembly;
         builder.Services.AddMediatR(mediatrAssembly);
-        //builder.Services.AddFluentValidation(new[] { mediatrAssembly });
+        builder.Services.AddFluentValidation(new[] { mediatrAssembly });
 
 
         var app = builder.Build();
@@ -42,10 +41,11 @@ public class Program
             app.UseSwaggerUI();
         }
 
+        app.UseMiddleware<ErrorHandlingMiddleware>();
+
         app.UseHttpsRedirection();
 
         app.UseAuthorization();
-
 
         app.MapControllers();
 
