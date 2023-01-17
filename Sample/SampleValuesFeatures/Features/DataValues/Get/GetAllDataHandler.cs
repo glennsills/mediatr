@@ -7,6 +7,7 @@ public class GetAllDataHandler : IRequestHandler<GetAllValues, List<KeyValuePair
 {
     public async Task<List<KeyValuePair<string, string>>> Handle(GetAllValues request, CancellationToken cancellationToken)
     {
+        throw new ArgumentNullException(nameof(request));
         return await DataContainer.GetAllData();
     }
 }

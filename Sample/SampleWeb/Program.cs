@@ -41,7 +41,7 @@ public class Program
             app.UseSwaggerUI();
         }
 
-        app.UseMiddleware<ErrorHandlingMiddleware>();
+        //app.UseMiddleware<ErrorHandlingMiddleware>();
 
         app.UseHttpsRedirection();
 

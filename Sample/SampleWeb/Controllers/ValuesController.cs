@@ -10,6 +10,7 @@ namespace SampleWeb.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
+[FeatureApiExceptionHandler]
 public class ValuesController : ControllerBase
 {
     private readonly IMediator _mediator;
@@ -42,12 +43,7 @@ public class ValuesController : ControllerBase
     public async Task<ActionResult> Post([FromBody] AddValueViewModel addValue)
     {
         var addValueRequest = new AddValue { Key = addValue.Key, Value = addValue.Value };
-        var result = await _mediator.Send(addValueRequest);
-        if (result.Success == true)
-        {
-            return Ok(result);
-        }
-        return BadRequest(result);
+        return Ok( await _mediator.Send(addValueRequest));
     }
 
     // PUT api/<ValuesController>/5
